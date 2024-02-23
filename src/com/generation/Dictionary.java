@@ -36,11 +36,9 @@ public class Dictionary {
     System.out.println("Bienvenido a tu traductor automatico");
     System.out.println("Ingresa una palabra en espanol: ");
     String wordSpanish = in.nextLine();
-    System.out.println(
-      dictionary.containsKey(wordSpanish.toLowerCase())
+    System.out.println(dictionary.containsKey(wordSpanish.toLowerCase())
         ? dictionary.get(wordSpanish.toLowerCase())
-        : "La palabra no se encuentra en el diccionario."
-    );
+        : "La palabra no se encuentra en el diccionario.");
     in.close();
   }
 }
